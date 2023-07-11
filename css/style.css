@@ -1,0 +1,114 @@
+html, body, div, span
+h1, h2, h3, h4, h5, h6, p
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul ,li{
+	list-style: none;
+}
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+ background-color: #60a9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.panel{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 960px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+.ph {
+    border-bottom: 1px solid #e1f1ff;
+   padding: 20px;
+  }
+.ph img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+.ph:last-child{
+    border-right: none;
+}
+h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.features{
+    margin: 40px 0 25px;
+    color: #60a9ff;
+}
+.features-item{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+}
+.features-item:last-child{
+    border-bottom: 1px solid #e1f1ff;
+  }
+
+  .pricing-price {
+    color: #016ff9; 
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .pricing-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0 ;
+    transition: background-color 200ms ease-in-out;
+  }
+  .pricing-button:hover, .pricing-button:focus {
+    background-color: #e1f1ff;
+  }
+  
+  .pricing-button.is-featured {
+    background-color: #48aaff;
+    color: white;
+  }
+  
+  .pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+    background-color: #269aff;
+    color: white;
+  }
+@media (min-width:900px){
+  .panel {
+    flex-direction: row;
+  }
+  .ph{
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+    
+  }
+  .pricing-button {
+    margin-bottom: 20px;
+  }
+}
